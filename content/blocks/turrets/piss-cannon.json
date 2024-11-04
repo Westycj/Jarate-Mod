@@ -1,0 +1,59 @@
+{
+  "type": "PowerTurret",
+  "name": "Mangler",
+  "description": "The Mangler fires a large charged bolt that disables units for a short period.",
+  "size": 3,
+  "health": 1080,
+  "range": 260,
+  "reload": 300,
+  "targetAir": false,
+  "targetGround": true,
+  "recoil": 7,
+  "rotateSpeed": 3,
+  "cooldownTime": 60,
+  "shootY": 8, 
+  "shootSound": "laser",
+  "hasLiquids": true,
+  "hasPower": true,
+  "coolantMultiplier": 2.5,
+  "consumes": {
+    "power": 8,
+    "coolant": {
+      "amount": 0.4,
+      "optional": true
+    }
+  },
+  "shootType": {
+    "type": "ArtilleryBulletType",
+    "status": "unmoving",
+    "statusDuration": 240,
+    "damage": 36,
+    "speed": 3,
+    "splashDamage": 60,
+    "splashDamageRadius": 50.2,
+    "lightning": 8,
+    "lightningLength": 8,
+    "lightningColor": "f3e979ff",
+    "ammoMultiplier": 1,
+    "height": 35,
+    "width": 15,
+    "lifetime": 90,
+    "frontColor": "ffe483",
+    "backColor": "fff4ce",
+    "hitEffect": "plasticExplosionFlak",
+    "hitColor": "ffe483",
+    "hitSound": "shockBlast",
+    "shootEffect": "instShoot",
+    "despawnEffect": "plasticExplosionFlak",
+    "smokeEffect": "colorSparkBig"
+  },
+  "requirements": [
+    {"item": "silicon"   , "amount": 150},
+    {"item": "titanium"  , "amount": 350},
+    {"item": "plastanium", "amount": 200},
+    {"item": "jarate"    , "amount": 250}
+    {"item": "surge-alloy", "amount": 150},
+  ],
+  "category": "turret",
+  "research": "status-turret"
+}

@@ -1,0 +1,58 @@
+{
+  "type": "Separator",
+  "name": "Surge Centrifuge",
+  "description": "Separates trace materials from scrap and forges them into Surge-alloy, Recycles byproducts into Jarate and Sand.",
+  "size": 3,
+  "health": 625,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "craftTime": 30,
+  "liquidCapacity": 20,
+  "drawer": {
+    "type": "drawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "drawLiquidTile",
+        "drawLiquid": "slag"
+      },
+      {
+        "type": "drawRegion",
+        "suffix": "-spinner",
+        "spinSprite": true,
+        "rotateSpeed": 5
+      },
+      {
+        "type": "drawDefault"
+      },
+      {
+        "type": "drawFlame",
+        "flameColor": "feb380"
+      }
+    ]
+  },
+  "consumes": {
+    "power": 6,
+    "items": {
+      "items": [ {"item": "scrap", "amount": 2}, {"item": "coal", "amount": 2} ]
+    },
+    "liquid": {"liquid": "slag", "amount": 0.1}
+  },
+  "requirements": [
+    {"item": "thorium"   , "amount": 80},
+    {"item": "silicon"    , "amount": 150},
+    {"item": "plastanium"   , "amount":  125},
+    {"item": "surge-alloy", "amount":  100}
+  ],
+  "category": "crafting",
+  "research": "disassembler",
+  "results": [
+    {"item": "surge-alloy", "amount": 1}, // 1 every 2 seconds on average
+    {"item": "jarate"     , "amount": 2}, // 1 every 1 second on average
+    {"item": "sand"       , "amount": 1}  // 1 every 2 seconds on average
+  ]
+}

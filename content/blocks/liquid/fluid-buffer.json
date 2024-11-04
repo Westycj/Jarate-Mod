@@ -1,0 +1,16 @@
+{
+  "type": "LiquidRouter",
+  "name": "Liquid Reservoir",
+  "description": "An Industrial Fluid Reservoir reinforced with Surge Alloy, Stores alot of Liquid.",
+  "size": 4,
+  "health": 1440,
+  "hasLiquids": true,
+  "liquidCapacity": 3600,
+  "requirements": [
+    {"item": "titanium"   , "amount": 60},
+    {"item": "metaglass"  , "amount": 80},
+    {"item": "surge-alloy", "amount": 20}
+  ],
+  "category": "liquid",
+  "research": "liquid-tank"
+}

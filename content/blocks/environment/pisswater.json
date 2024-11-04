@@ -1,0 +1,14 @@
+{
+  "type": "Floor",
+  "name": "Piss",
+  "variants": 1,
+  "liquidDrop": "surge-slurry",
+  "playerUnmineable": "true",
+  "speedMultiplier": 1,
+  "cacheLayer": "water",
+  "drownTime": 480,
+  "isLiquid": "true",
+  "status": "jarated",
+  "hasShadow": "false",
+  "liquidMultiplier": 0.5
+}

@@ -1,0 +1,11 @@
+{
+  "name": "[gold]Jarate Mod",
+  "author": "[red[]]Westycj[[]]",
+  "description": "A light mod with a funny name and a focus on extending Surge-alloy technology, adds a few unique turrets and production buildings with (what I think are) some interesting mechanics.
+
+Made for Serpulo, the mod has integration for/works well with blocks like the tsunami and wave, so try and find some usecases, turret combos, and whatnot.
+
+Reports on bugs, balancing issues, or simply suggestions are very much welcome."
+  "minGameVersion": "136",
+  "version": 2.0
+}

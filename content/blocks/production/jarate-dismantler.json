@@ -1,0 +1,29 @@
+{
+  "type": "GenericCrafter",
+  "name": "Jarate Dismantler",
+  "description": "Dismantles Jarate back into its elements.",
+  "size": 2,
+  "health": 465,
+  "itemCapacity": 10,
+  "liquidCapacity": 20,
+  "craftTime": 20,
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "ignoreLiquidFullness": true,
+  "updateEffect": "hitMeltdown",
+  "consumes": {
+    "items": {
+      "items": [ {"item": "jarate", "amount": 1} ]
+    }
+  },
+  "requirements": [
+    {"item": "graphite"   , "amount": 100},
+    {"item": "thorium"    , "amount":  65},
+    {"item": "jarate", "amount":  45}
+  ],
+  "category": "crafting",
+  "research": "jarate-filler",
+  "outputItem": {"item": "metaglass", "amount": 1},
+  "outputLiquid": {"liquid": "surge-slurry", "amount": 0.2}
+}

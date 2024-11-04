@@ -1,0 +1,29 @@
+{
+  "type": "GenericCrafter",
+  "name": "Piss Compressor",
+  "description": "Pulverises Surge-alloy into Water to create the ultimate coolant.",
+  "size": 2,
+  "health": 240,
+  "itemCapacity": 10,
+  "liquidCapacity": 30,
+  "craftTime": 60,
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "updateEffect": "smeltsmoke",
+  "consumes": {
+    "power": 1,
+    "liquid": {"liquid": "water", "amount": 0.2},
+    "items": {
+      "items": [ {"item": "surge-alloy", "amount": 2} ]
+    }
+  },
+  "requirements": [
+    {"item": "titanium"   , "amount": 100},
+    {"item": "silicon"    , "amount":  75},
+    {"item": "surge-alloy", "amount":  25}
+  ],
+  "category": "crafting",
+  "research": "cryofluid-mixer",
+  "outputLiquid": {"liquid": "surge-slurry", "amount": 0.2}
+}

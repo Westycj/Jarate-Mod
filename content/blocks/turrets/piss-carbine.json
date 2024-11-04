@@ -1,0 +1,109 @@
+{
+  "type": "ItemTurret",
+  "name": "Carbine",
+  "description": "A high fire rate, high projectile speed turret, Lacks target movement prediction. Based of the Cleaner's Carbine",
+  "size": 2,
+  "health": 960,
+  "reload": 24.5,
+  "range": 300,
+  "inaccuracy": 3,
+  "coolantMultiplier": 2.5,
+  "predictTarget": false,
+  "targetAir": true,
+  "targetGround": false,
+  "recoil": 1,
+  "rotateSpeed": 12,
+  "shootSound": "shootCarbine",
+  "shootEffect": "shootSmall",
+  "shoot": {
+    "type": "ShootMulti",
+    "source": "ShootAlternate",
+    "dest": [
+      {
+        "type": "ShootBarrel",
+        "shots": 3,
+        "shotDelay": 8.1,
+        "barrels": [3, 0, 0, 0, 0, 0, -3, 0, 0]
+      }
+    ]
+  },
+  "consumes": {
+    "coolant": {
+      "amount": 0.2,
+      "optional": true
+    }
+  },
+  "ammoTypes": {
+    "metaglass": {
+      "type": "BasicBulletType",
+      "damage": 36,
+      "speed": 16,
+      "ammoMultiplier": 2,
+      "hitEffect": "flakExplosion",
+      "lifetime": 20,
+      "height": 10,
+      "width": 7,
+      "fragBullets": 6,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "lifetime": 10,
+        "speed": 4,
+        "damage": 22
+      }
+    },
+    "plastanium": {
+      "type": "BasicBulletType",
+      "damage": 52,
+      "speed": 16,
+      "ammoMultiplier": 1,
+      "backColor": "cbd97f",
+      "hitEffect": "flakExplosion",
+      "lifetime": 20,
+      "height": 10,
+      "width": 7,
+      "fragBullets": 8,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "lifetime": 10,
+        "speed": 4,
+        "damage": 38
+      }
+    },
+    "surge-alloy": {
+      "type": "BasicBulletType",
+      "damage": 64,
+      "lightning": 4,
+      "lightningLength": 5,
+      "lightningColor": "f3e979ff",
+      "backColor": "f3e979",
+      "speed": 16,
+      "ammoMultiplier": 2,
+      "hitEffect": "flakExplosion",
+      "lifetime": 20,
+      "height": 10,
+      "width": 7
+    },
+    "jarate": {
+      "type": "BasicBulletType",
+      "damage": 48,
+      "splashDamageRadius": 18.4,
+      "splashDamage": 32,
+      "speed": 16,
+      "status": "jarated",
+      "ammoMultiplier": 1,
+      "backColor": "ffe483",
+      "hitEffect": "flakExplosion",
+      "lifetime": 20,
+      "height": 10,
+      "width": 7
+    }
+  },
+  "requirements": [
+    {"item": "graphite" , "amount": 150},
+    {"item": "titanium" , "amount":  80}
+    {"item": "jarate"   , "amount": 125},
+    {"item": "surge-alloy", "amount":  45},
+  ],
+  "category": "turret",
+  "research": "swarmer"
+}

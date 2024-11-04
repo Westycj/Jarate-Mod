@@ -1,0 +1,39 @@
+{
+  "type": "GenericCrafter",
+  "name": "Jarate Filler",
+  "description": "Molds metaglass into jars and fills them for transportation.",
+  "size": 2,
+  "health": 360,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "craftTime": 120,
+  "updateEffect": "smeltsmoke",
+  "liquidCapacity": 10,
+  "drawer": {
+    "type": "drawMulti",
+    "drawers": [
+      {
+        "type": "drawDefault"
+      },
+      {
+        "type": "drawFlame"
+      }
+    ]
+  },
+  "consumes": {
+    "power": 4,
+    "items": {
+      "items": [ {"item": "metaglass", "amount": 4} ]
+    },
+    "liquid": {"liquid": "surge-slurry", "amount": 0.1}
+  },
+  "requirements": [
+    {"item": "titanium"   , "amount":  75},
+    {"item": "graphite"   , "amount": 125},
+    {"item": "surge-alloy", "amount":  25}
+  ],
+  "category": "crafting",
+  "research": "piss-compressor",
+  "outputItem": {"item": "jarate", "amount": 3}
+}

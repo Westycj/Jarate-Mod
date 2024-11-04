@@ -1,0 +1,136 @@
+{
+  "type": "liquidTurret",
+  "name": "Sydney Sleeper",
+  "description": "The Sydney Sleeper can apply status effects from a large distance, Combining status effects can be extremely effective.",
+  "size": 3,
+  "health": 1660,
+  "range": 520,
+  "reload": 180,
+  "targetAir": false,
+  "targetGround": true,
+  "extinguish": false,
+  "cooldownTime": 40,
+  "shootCone": 3,
+  "recoil": 2,
+  "rotateSpeed": 3,
+  "shootSound": "shootSleeper",
+  "smokeEffect" : "shootBigSmoke2",
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "regionPart",
+        "progress": "recoil",
+        "suffix": "-barrel",
+        "under": "true",
+        "moveY": -2
+      },
+      {
+        "type": "regionPart",
+        "suffix": "-body",
+        "under": "true"
+      }
+    ]
+  },
+  "loopSound": "none",
+  "hasLiquids": true,
+  "liquidCapacity": 40,
+  "ammoPerShot": 10,
+  "ammoTypes": {
+    "water": {
+      "type": "ArtilleryBulletType",
+      "status": "wet",
+      "statusDuration": 480,
+      "speed": 8,
+      "splashDamage": 24,
+      "splashDamageRadius": 64.8,
+      "ammoMultiplier": 1,
+      "height": 35,
+      "width": 15,
+      "frontColor": "596ab8",
+      "backColor": "909cd0",
+      "hitEffect": "shieldWave",
+      "hitColor": "596ab8",
+      "despawnEffect": "shieldWave",
+      "despawnSound": "splash"
+    },
+    "oil": {
+      "type": "ArtilleryBulletType",
+      "status": "tarred",
+      "statusDuration": 480,
+      "speed": 8,
+      "splashDamage": 42,
+      "splashDamageRadius": 64.8,
+      "ammoMultiplier": 1,
+      "height": 35,
+      "width": 15,
+      "layer": 99.8,
+      "frontColor": "313131",
+      "backColor": "595959",
+      // TODO figure oput how to remove transparency from hiteffect hitcolor
+      "hitEffect": "shieldWave",
+      "hitColor": "717171",
+      "despawnEffect": "shieldWave",
+      "despawnSound": "splash"
+    },
+    "slag": {
+      "type": "ArtilleryBulletType",
+      "status": "burning",
+      "statusDuration": 480,
+      "speed": 8,
+      "splashDamage": 72,
+      "splashDamageRadius": 64.8,
+      "ammoMultiplier": 1,
+      "height": 35,
+      "width": 15,
+      "frontColor": "ffa166",
+      "backColor": "ffcfb1",
+      "hitEffect": "shieldWave",
+      "hitColor": "ffa166",
+      "despawnEffect": "shieldWave",
+      "despawnSound": "splash"
+    },
+    "cryofluid": {
+      "type": "ArtilleryBulletType",
+      "status": "freezing",
+      "statusDuration": 480,
+      "speed": 8,
+      "splashDamage": 24,
+      "splashDamageRadius": 64.8,
+      "ammoMultiplier": 1,
+      "height": 35,
+      "width": 15,
+      "frontColor": "6ecdec",
+      "backColor": "b4e6f6",
+      "hitEffect": "shieldWave",
+      "hitColor": "6ecdec",
+      "despawnEffect": "shieldWave",
+      "despawnSound": "splash"
+    },
+    "surge-slurry": {
+      "type": "ArtilleryBulletType",
+      "status": "jarated",
+      "statusDuration": 480,
+      "speed": 8,
+      "splashDamage": 42,
+      "splashDamageRadius": 64.8,
+      "ammoMultiplier": 1,
+      "height": 35,
+      "width": 15,
+      "frontColor": "ffe483",
+      "backColor": "fff4ce",
+      "hitEffect": "shieldWave",
+      "hitColor": "E8D174",
+      "despawnEffect": "shieldWave",
+      "despawnSound": "splash"
+    }
+  },
+  "requirements": [
+    {"item": "metaglass" , "amount": 175},
+    {"item": "graphite", "amount": 150},
+    {"item": "jarate"  , "amount": 250},
+    {"item": "surge-alloy" , "amount": 75}
+  ],
+  "category": "turret",
+  "research": "tsunami"
+}
