@@ -51,8 +51,8 @@
   "category": "crafting",
   "research": "disassembler",
   "results": [
-    {"item": "surge-alloy", "amount": 1}, // 1 every 2 seconds on average
-    {"item": "jarate"     , "amount": 2}, // 1 every 1 second on average
-    {"item": "sand"       , "amount": 1}  // 1 every 2 seconds on average
+    {"item": "surge-alloy", "amount": 1},
+    {"item": "jarate"     , "amount": 2},
+    {"item": "sand"       , "amount": 1}
   ]
 }
