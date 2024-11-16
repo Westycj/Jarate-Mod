@@ -1,5 +1,5 @@
-const AmmoLiquids = require('liquids')
-const status = require('liquids')
+const AmmoLiquids = require('const')
+const status = require('const')
 
 Blocks.wave.ammoTypes.put(AmmoLiquids.surgeSlurry, Object.assign(new LiquidBulletType(AmmoLiquids.surgeSlurry), {
 	knockback: 0.55,

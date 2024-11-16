@@ -11,6 +11,7 @@
   "recoil": 7,
   "rotateSpeed": 3,
   "cooldownTime": 60,
+  "shake": 3,
   "shootY": 8, 
   "shootSound": "laser",
   "hasLiquids": true,
